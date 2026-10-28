@@ -1,0 +1,38 @@
+name: Zone population
+# Samples the Subspace Reloaded online player count every 5 minutes and saves it in pop/.
+# One run per hour takes ~11 samples and makes one commit. Public repo: free Actions minutes.
+on:
+  schedule:
+    - cron: "3 * * * *"
+  workflow_dispatch:
+    inputs:
+      samples:
+        description: "Samples in this run (5 minutes apart)"
+        default: "11"
+concurrency:
+  group: population
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sample player count
+        env:
+          SAMPLES: ${{ github.event.inputs.samples || '11' }}
+        run: python3 scripts/pop_sample.py
+      - name: Commit
+        run: |
+          git config user.name "Claude"
+          git config user.email "noreply@anthropic.com"
+          git add pop
+          git diff --cached --quiet && exit 0
+          git commit -m "Population samples" -q
+          for i in 1 2 3 4 5; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep 15
+          done
+          exit 1
