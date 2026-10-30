@@ -7,6 +7,7 @@ import json, os, sys, time, urllib.request
 URL = "https://auth.subspacereloaded.com/playercount"
 N = int(os.environ.get("SAMPLES", "11"))      # samples in this run
 GAP = int(os.environ.get("GAP", "300"))        # seconds between samples
+FAILS = []
 def get():
     try:
         req = urllib.request.Request(URL, headers={"User-Agent": "premier-playbook-pop/1.0"})
@@ -14,7 +15,7 @@ def get():
             v = json.loads(r.read().decode()).get("playercount")
             return int(v) if v is not None else None
     except Exception as e:
-        print("sample failed:", e, file=sys.stderr); return None
+        print("sample failed:", e, file=sys.stderr); FAILS.append(str(e)[:200]); return None
 def load(p, d):
     try:
         with open(p) as f: return json.load(f)
@@ -24,6 +25,15 @@ for i in range(N):
     v = get(); t = int(time.time())
     if v is not None: new.append([t, v]); print(time.strftime("%H:%M:%S"), v)
     if i < N - 1: time.sleep(GAP)
+# health file: shows on GitHub whether sampling works, even when every sample fails
+os.makedirs("pop", exist_ok=True)
+Hl = load("pop/health.json", {})
+now = int(time.time())
+Hl["lastRun"] = now
+if new: Hl["lastOk"] = new[-1][0]
+if FAILS: Hl["lastFail"] = now; Hl["lastError"] = FAILS[-1]
+Hl["okThisRun"] = len(new); Hl["failThisRun"] = len(FAILS)
+json.dump(Hl, open("pop/health.json", "w"), separators=(",", ":"))
 if not new: sys.exit(0)
 R = load("pop/recent.json", {"s": []}); H = load("pop/hourly.json", {"h": []})
 s = R.get("s", []) + new; cut = int(time.time()) - 8 * 86400
