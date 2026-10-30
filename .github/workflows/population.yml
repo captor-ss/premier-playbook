@@ -1,13 +1,15 @@
 name: Zone population
 # Samples the Subspace Reloaded online player count every 5 minutes and saves it in pop/.
-# One run per hour takes ~11 samples and makes one commit. Public repo: free Actions minutes.
+# GitHub only starts scheduled runs every few hours in practice, so each run keeps sampling
+# for about 5.5 hours and commits every 30 minutes. The next scheduled run queues behind it
+# (concurrency group), so collection is close to continuous. Public repo: free Actions minutes.
 on:
   schedule:
     - cron: "3 * * * *"
   workflow_dispatch:
     inputs:
-      samples:
-        description: "Samples in this run (5 minutes apart)"
+      chunks:
+        description: "30-minute blocks in this run (6 samples each)"
         default: "11"
 concurrency:
   group: population
@@ -17,22 +19,24 @@ permissions:
 jobs:
   sample:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
-      - name: Sample player count
+      - name: Sample and commit every 30 minutes
         env:
-          SAMPLES: ${{ github.event.inputs.samples || '11' }}
-        run: python3 scripts/pop_sample.py
-      - name: Commit
+          CHUNKS: ${{ github.event.inputs.chunks || '11' }}
         run: |
           git config user.name "Claude"
           git config user.email "noreply@anthropic.com"
-          git add pop
-          git diff --cached --quiet && exit 0
-          git commit -m "Population samples" -q
-          for i in 1 2 3 4 5; do
-            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
-            sleep 15
+          for c in $(seq 1 "$CHUNKS"); do
+            SAMPLES=6 python3 scripts/pop_sample.py || true
+            git add pop
+            if ! git diff --cached --quiet; then
+              git commit -q -m "Population samples"
+              for i in 1 2 3 4 5; do
+                git pull --rebase -q origin main && git push -q origin HEAD:main && break
+                sleep 15
+              done
+            fi
+            if [ "$c" -lt "$CHUNKS" ]; then sleep 300; fi
           done
-          exit 1
