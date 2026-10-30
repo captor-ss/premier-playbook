@@ -1,6 +1,7 @@
 """Sample the Subspace Reloaded online player count and keep a small history.
 pop/recent.json : {"u": last sample unix, "s": [[unix, players], ...]}  last 8 days, ~5-minute samples
 pop/hourly.json : {"h": [[hourStartUnix, avg, max, min, samples], ...]}   every hour since collection began
+pop/archive/YYYY-MM.json : {"s": [[unix, players], ...]}  every 5-minute sample, kept for good (one file per UTC month)
 """
 import json, os, sys, time, urllib.request
 URL = "https://auth.subspacereloaded.com/playercount"
@@ -37,4 +38,13 @@ H = {"h": sorted(h.values())}
 os.makedirs("pop", exist_ok=True)
 json.dump(R, open("pop/recent.json", "w"), separators=(",", ":"))
 json.dump(H, open("pop/hourly.json", "w"), separators=(",", ":"))
+# permanent archive: every sample, one file per month, never pruned
+os.makedirs("pop/archive", exist_ok=True)
+for m in sorted({time.strftime("%Y-%m", time.gmtime(t)) for t, _ in s}):
+    path = f"pop/archive/{m}.json"
+    A = load(path, {"s": []})
+    rows = {x[0]: x for x in A.get("s", [])}
+    for t, v in s:
+        if time.strftime("%Y-%m", time.gmtime(t)) == m: rows[t] = [t, v]
+    json.dump({"s": sorted(rows.values())}, open(path, "w"), separators=(",", ":"))
 print("stored", len(new), "samples; recent", len(s), "hourly", len(H["h"]))
