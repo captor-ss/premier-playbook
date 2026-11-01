@@ -93,7 +93,7 @@ async function syncGames() {
   for (const id of want) {
     if (have.has(id)) { P.pracPending = P.pracPending.filter(x => +x.id !== id); continue; }
     let res;
-    try { res = toGame(await get("/matches/svs-4v4-" + id)); } catch (e) { res = { pending: true, err: e.message }; }
+    try { res = toGame(await get("/matches/svs-4v4-" + id)); } catch (e) { res = /^404 /.test(e.message) ? { skip: true } : { pending: true, err: e.message }; }
     if (res.skip) { P.pracPending = P.pracPending.filter(x => +x.id !== id); changed = true; continue; }
     if (res.pending) { const why = String(res.err || "").slice(0, 80), o = P.pracPending.find(x => +x.id === id);
       if (!o) { P.pracPending.push({ id, first: today, why }); changed = true; } else if (o.why !== why) { o.why = why; changed = true; }
