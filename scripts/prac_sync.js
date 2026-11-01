@@ -43,9 +43,9 @@ const r1 = x => Math.round(x * 10) / 10, r2 = x => Math.round(x * 100) / 100;
 
 function toGame(d) {
   const m = d.match, id = m.seq; if (m.gameType !== "svs-4v4") return { skip: true };
-  if (m.finalState && m.finalState !== "completed") return { pending: true };
+  if (m.finalState && m.finalState !== "completed") return { pending: true, err: "state " + m.finalState };
   const T = d.teams.slice().sort((a, b) => a.teamIndex - b.teamIndex);
-  if (T.length !== 2 || !T.every(t => t.players && t.players.length)) return { pending: true };
+  if (T.length !== 2 || !T.every(t => t.players && t.players.length)) return { pending: true, err: "teams " + T.length };
   const rows = [], tags = {}, dead = [0, 0];
   T.forEach((t, ti) => t.players.forEach(p => {
     const M = p.metrics || {}; if (!p.metrics) return;
@@ -60,7 +60,7 @@ function toGame(d) {
       ra, ra != null && rb != null ? ra - rb : null, M.soloKills || 0, M.wastedRockets || 0]);
     if (p.squadTag) tags[p.displayName] = p.squadTag;
   }));
-  if (rows.length < 2) return { pending: true };
+  if (rows.length < 2) return { pending: true, err: "no player stats" };
   const score = [dead[1], dead[0]], winT = T.find(t => t.rank === 1);
   const win = winT ? (winT.teamIndex === T[0].teamIndex ? "A" : "B") : (score[0] >= score[1] ? "A" : "B");
   const end = m.endedAt || m.startedAt;
@@ -95,7 +95,9 @@ async function syncGames() {
     let res;
     try { res = toGame(await get("/matches/svs-4v4-" + id)); } catch (e) { res = { pending: true, err: e.message }; }
     if (res.skip) { P.pracPending = P.pracPending.filter(x => +x.id !== id); changed = true; continue; }
-    if (res.pending) { if (!P.pracPending.some(x => +x.id === id)) { P.pracPending.push({ id, first: today }); changed = true; } log("pending", id, res.err || ""); continue; }
+    if (res.pending) { const why = String(res.err || "").slice(0, 80), o = P.pracPending.find(x => +x.id === id);
+      if (!o) { P.pracPending.push({ id, first: today, why }); changed = true; } else if (o.why !== why) { o.why = why; changed = true; }
+      log("pending", id, why); continue; }
     P.pracMatches.push(res.g); have.add(id); P.pracFeed[String(id)] = res.feed; Object.assign(P.pracTags, res.tags);
     P.pracPending = P.pracPending.filter(x => +x.id !== id); changed = true; log("added", id, res.g.date, res.g.score.join("-"));
   }
