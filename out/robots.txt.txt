@@ -1,0 +1,21 @@
+# Subspace: Reloaded — https://subspacereloaded.com/
+#
+# Until this file existed the origin served no robots.txt at all, and Cloudflare answered /robots.txt
+# with its own managed "Content Signals Policy" boilerplate instead. That file is comment-only and
+# blocks nothing, but it also carried no Sitemap: line — so there was nothing pointing a crawler at
+# anything. Verify after deploy that this is what /robots.txt actually returns; Cloudflare's feature
+# is documented to append its signals to an origin file rather than replace it, and the two spellings
+# are easy to confuse when both are 200s.
+
+User-agent: *
+Allow: /
+
+# The chat transcript viewer replays a log held in the visitor's own localStorage. There is no
+# server-side content behind it, so every crawl sees the same empty page — a thin duplicate that
+# earns nothing and dilutes the two URLs that matter. Prefix match, so /chat/ is covered too.
+Disallow: /chat
+
+# Keyboard-legend demo page for the tutorial; an internal artefact, not a destination.
+Disallow: /tutorial-keys-demo.html
+
+Sitemap: https://subspacereloaded.com/sitemap.xml
