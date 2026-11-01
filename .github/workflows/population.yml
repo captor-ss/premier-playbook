@@ -1,43 +1,59 @@
-name: Zone population
-# Samples the Subspace Reloaded online player count every 5 minutes and saves it in pop/.
-# GitHub only starts scheduled runs every few hours in practice, so each run keeps sampling
-# for about 5.5 hours and commits every 30 minutes. The next scheduled run queues behind it
-# (concurrency group), so collection is close to continuous. Public repo: free Actions minutes.
+name: Zone and prac updates
+# Every 5 minutes: samples the Subspace Reloaded online player count (pop/) and reads any new
+# Standard Fours prac games into prac.json (scripts/prac_sync.js). GitHub only starts scheduled runs
+# every few hours in practice, so each run keeps going for about 5.5 hours; the next scheduled run
+# queues behind it (concurrency group), so updates are close to continuous. Public repo: free minutes.
 on:
   schedule:
     - cron: "3 * * * *"
   workflow_dispatch:
     inputs:
-      chunks:
-        description: "30-minute blocks in this run (6 samples each)"
-        default: "11"
+      ticks:
+        description: "5-minute rounds in this run"
+        default: "64"
+  push:
+    branches: [main]
+    paths: [".github/workflows/population.yml", "scripts/prac_sync.js"]
 concurrency:
-  group: population
+  group: zone-prac
   cancel-in-progress: false
 permissions:
   contents: write
 jobs:
-  sample:
+  update:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 345
     steps:
       - uses: actions/checkout@v4
-      - name: Sample and commit every 30 minutes
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install page reader
+        run: npm install --no-save --no-audit --no-fund json5@2.2.3
+      - name: Update every 5 minutes
         env:
-          CHUNKS: ${{ github.event.inputs.chunks || '11' }}
+          TICKS: ${{ github.event.inputs.ticks || '64' }}
         run: |
           git config user.name "Claude"
           git config user.email "noreply@anthropic.com"
-          for c in $(seq 1 "$CHUNKS"); do
-            SAMPLES=6 timeout 1800 python3 scripts/pop_sample.py || true
-            git add pop
-            if ! git diff --cached --quiet; then
-              git commit -q -m "Population samples"
-              for i in 1 2 3 4 5; do
-                timeout 90 git pull --rebase -q origin main && timeout 90 git push -q origin HEAD:main && break
-                git rebase --abort 2>/dev/null || true
-                sleep 15
-              done
+          for c in $(seq 1 "$TICKS"); do
+            start=$(date +%s)
+            SAMPLES=1 GAP=0 timeout 60 python3 scripts/pop_sample.py || true
+            timeout 180 node scripts/prac_sync.js || true
+            msg=""
+            if ! git diff --quiet -- prac.json 2>/dev/null || [ -n "$(git status --porcelain prac.json)" ]; then msg="Prac update"; fi
+            if [ -z "$msg" ] && [ $((c % 3)) -eq 0 ]; then msg="Population samples"; fi
+            if [ -n "$msg" ]; then
+              git add pop prac.json 2>/dev/null || git add pop
+              if ! git diff --cached --quiet; then
+                git commit -q -m "$msg"
+                for i in 1 2 3 4 5; do
+                  timeout 90 git pull --rebase -q origin main && timeout 90 git push -q origin HEAD:main && break
+                  git rebase --abort 2>/dev/null || true
+                  sleep 10
+                done
+              fi
             fi
-            if [ "$c" -lt "$CHUNKS" ]; then sleep 300; fi
+            left=$((300 - ($(date +%s) - start)))
+            if [ "$c" -lt "$TICKS" ] && [ "$left" -gt 0 ]; then sleep "$left"; fi
           done
