@@ -29,12 +29,13 @@ jobs:
           git config user.name "Claude"
           git config user.email "noreply@anthropic.com"
           for c in $(seq 1 "$CHUNKS"); do
-            SAMPLES=6 python3 scripts/pop_sample.py || true
+            SAMPLES=6 timeout 1800 python3 scripts/pop_sample.py || true
             git add pop
             if ! git diff --cached --quiet; then
               git commit -q -m "Population samples"
               for i in 1 2 3 4 5; do
-                git pull --rebase -q origin main && git push -q origin HEAD:main && break
+                timeout 90 git pull --rebase -q origin main && timeout 90 git push -q origin HEAD:main && break
+                git rebase --abort 2>/dev/null || true
                 sleep 15
               done
             fi
