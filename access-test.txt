@@ -1,2 +1,1 @@
-2026-11-01T13:16:02Z
-method: plain clone (add_repo tool not found)
+2026-11-04T08:16:16Z add_repo missing
