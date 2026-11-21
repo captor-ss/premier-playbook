@@ -67,9 +67,39 @@ function toGame(d) {
   const g = { id, date: hki(end), at: new Date(end).toISOString().slice(0, 16) + "Z", dur: mss(m.durationSec || 0), score, win,
     ff: Math.max(...score) < 12, P: rows };
   const feed = (d.timeline || []).filter(e => e.kind === "kill" && e.killer && e.player).map(e => [Math.floor(e.t), e.killer, e.player]);
+  shipProbe(d); const S = shipTrack(d); if (Object.keys(S).length) g.S = S; else g.Sx = 1;
   return { g, feed, tags };
 }
 
+// ---- ships: which ship each pilot flew and when they switched, from the match timeline ----
+// Stored per game as S = {pilot: [[secondOfMatch, "Warbird"], ...]} (one entry per ship change).
+const shipOf = v => { if (typeof v === "number") return SHIPS[v] || null; if (typeof v === "string") { const t = v.trim().toLowerCase(); return SHIPS.find(x => x.toLowerCase() === t) || null; } return null; };
+function shipTrack(d) {
+  const S = {}, add = (n, t, s) => { if (!n || !s) return; n = String(n).trim(); const L = S[n] = S[n] || []; if (!L.length || L[L.length - 1][1] !== s) L.push([Math.max(0, Math.floor(+t || 0)), s]); };
+  try {
+    (d.teams || []).forEach(tm => (tm.players || []).forEach(p => { for (const [k, v] of Object.entries(p)) if (/ship/i.test(k)) { const s = shipOf(v); if (s) add(p.displayName, 0, s); } }));
+    (d.timeline || []).forEach(e => {
+      if (e.fromShip != null && e.player != null && !S[String(e.player).trim()]) add(e.player, 0, shipOf(e.fromShip));
+      for (const [k, v] of Object.entries(e)) {
+        if (/^fromShip$/i.test(k)) continue;
+        if (/ship/i.test(k)) { const s = shipOf(v); if (s) { if (/^killer/i.test(k)) add(e.killer, e.t, s); else add(e.player || e.name || e.displayName, e.t, s); } }
+        else if (typeof v === "string") { const m = v.match(/^(.+?) changed ships? to (\w+)/i); if (m) add(m[1], e.t, shipOf(m[2])); }
+      }
+    });
+    Object.values(S).forEach(L => L.sort((a, b) => a[0] - b[0]));
+  } catch (e) { log("ship track failed:", e.message); }
+  return S;
+}
+function shipProbe(d) {
+  if (P.shipProbe && P.shipProbe.n >= 3) return;
+  try {
+    const pr = P.shipProbe = P.shipProbe || { n: 0, kinds: {}, playerKeys: [], samples: [] };
+    pr.n++;
+    (d.timeline || []).forEach(e => { const k = String(e.kind); pr.kinds[k] = [...new Set([...(pr.kinds[k] || []), ...Object.keys(e)])];
+      if (pr.samples.length < 8 && (Object.keys(e).some(x => /ship/i.test(x)) || Object.values(e).some(v => typeof v === "string" && /ship/i.test(v)))) pr.samples.push(JSON.stringify(e).slice(0, 300)); });
+    (d.teams || []).forEach(tm => (tm.players || []).forEach(p => { pr.playerKeys = [...new Set([...pr.playerKeys, ...Object.keys(p)])]; }));
+  } catch (e) {}
+}
 async function newIds() {
   const have = new Set(P.pracMatches.map(m => +m.id)), max = Math.max(0, ...have); const ids = [];
   let before = null;
@@ -104,6 +134,16 @@ async function syncGames() {
   P.pracMatches.sort((a, b) => +a.id - +b.id);
 }
 
+// Fill in ships for older games, newest first, a few per run (one page read each).
+async function backfillShips() {
+  const BF = +(process.env.SHIP_BACKFILL || 15), cut = hki(Date.now() - 75 * 864e5);
+  const todo = P.pracMatches.filter(m => !m.S && !m.Sx && m.date >= cut).sort((a, b) => +b.id - +a.id).slice(0, BF);
+  for (const m of todo) {
+    try { const d = await get("/matches/svs-4v4-" + m.id); shipProbe(d); const S = shipTrack(d); if (Object.keys(S).length) m.S = S; else m.Sx = 1; changed = true; }
+    catch (e) { if (/^404 /.test(e.message)) { m.Sx = 1; changed = true; } else { log("ship backfill", m.id, e.message); break; } }
+  }
+  if (todo.length) log("ships filled", todo.filter(m => m.S).length, "of", todo.length);
+}
 async function syncLadder() {
   if (P.pracAllAt && Date.now() - Date.parse(P.pracAllAt) < RANK_EVERY) return;
   let R; try { R = await get("/rankings/svs-4v4"); } catch (e) { log("ladder failed:", e.message); return; }
@@ -122,7 +162,7 @@ async function syncLadder() {
 }
 
 (async () => {
-  await syncGames(); await syncLadder();
+  await syncGames(); await backfillShips(); await syncLadder();
   if (changed) { P.u = Math.floor(Date.now() / 1000); fs.writeFileSync("prac.json", JSON.stringify(P)); log("saved", P.pracMatches.length, "games"); }
   else log("nothing new");
 })().catch(e => { console.error(e); process.exit(0); });
