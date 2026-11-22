@@ -1,0 +1,329 @@
+match,stage,pilot,team,kills,deaths,assists,minutes
+9,Regular season round 1,Suri,DEGEN,3,2,3,20.9
+9,Regular season round 1,Valhalla,DEGEN,5,1,4,20.9
+9,Regular season round 1,Mindriot,DEGEN,2,0,1,20.9
+9,Regular season round 1,Legacy,DEGEN,1,0,5,20.9
+9,Regular season round 1,Saiyan,Warriors,0,2,0,19.8
+9,Regular season round 1,Monkey boy,Warriors,2,3,1,19.2
+9,Regular season round 1,Bombed,Warriors,1,3,0,19.8
+9,Regular season round 1,Charas,Warriors,0,2,0,5.9
+9,Regular season round 1,Grunt,Warriors,0,1,0,1.7
+10,Regular season round 1,The seven year itch,Foundation,1,1,5,37.6
+10,Regular season round 1,Shaun,Foundation,0,0,1,3.5
+10,Regular season round 1,Dre,Foundation,2,1,4,41.2
+10,Regular season round 1,187,Foundation,4,0,4,41.2
+10,Regular season round 1,Carnage,Foundation,4,2,7,41.2
+10,Regular season round 1,Jon,OMEGA,1,3,1,35.7
+10,Regular season round 1,Euripedes,OMEGA,0,1,0,9.4
+10,Regular season round 1,Kepi,OMEGA,2,2,2,31.6
+10,Regular season round 1,Bettysueyo,OMEGA,0,3,2,41.1
+10,Regular season round 1,Ghost,OMEGA,1,3,1,39.5
+11,Regular season round 1,Creature,LEGOS,3,3,4,19.2
+11,Regular season round 1,Bo,LEGOS,0,1,0,7.5
+11,Regular season round 1,UKU,LEGOS,1,1,3,13.0
+11,Regular season round 1,Curi,LEGOS,4,1,5,20.9
+11,Regular season round 1,Krilyu,LEGOS,4,2,6,20.9
+11,Regular season round 1,Loveless,Eternal,2,3,5,19.2
+11,Regular season round 1,Crescendo,Eternal,1,3,3,13.8
+11,Regular season round 1,Banzi,Eternal,1,3,3,20.9
+11,Regular season round 1,Paz,Eternal,0,1,0,2.9
+11,Regular season round 1,MACrelliK,Eternal,1,0,1,3.1
+11,Regular season round 1,Sword,Eternal,2,2,0,13.0
+62,Regular season round 2,Curi,LEGOS,0,0,0,12.3
+62,Regular season round 2,UKU,LEGOS,0,0,8,30.9
+62,Regular season round 2,Dev,LEGOS,2,3,4,38.0
+62,Regular season round 2,Krilyu,LEGOS,5,1,3,43.8
+62,Regular season round 2,Marky,LEGOS,0,0,0,5.1
+62,Regular season round 2,Creature,LEGOS,3,2,3,38.4
+62,Regular season round 2,DINK,DEGEN,0,0,0,7.7
+62,Regular season round 2,Suri,DEGEN,1,3,1,20.8
+62,Regular season round 2,Legacy,DEGEN,1,3,1,37.1
+62,Regular season round 2,Mindriot,DEGEN,0,0,0,3.7
+62,Regular season round 2,Tunahead,DEGEN,2,3,3,38.5
+62,Regular season round 2,Tool,DEGEN,1,1,2,29.0
+13,Regular season round 2,Candyman,Foundation,3,1,5,32.8
+13,Regular season round 2,Carnage,Foundation,4,2,5,32.8
+13,Regular season round 2,SK,Foundation,1,1,5,32.8
+13,Regular season round 2,187,Foundation,0,1,1,12.8
+13,Regular season round 2,The seven year itch,Foundation,2,1,6,19.9
+13,Regular season round 2,Loveless,Eternal,1,3,1,26.9
+13,Regular season round 2,Aiti,Eternal,1,3,3,32.8
+13,Regular season round 2,Crescendo,Eternal,2,2,1,19.8
+13,Regular season round 2,Download,Eternal,0,0,0,5.9
+13,Regular season round 2,Macuto,Eternal,0,1,0,2.6
+13,Regular season round 2,Sword,Eternal,2,3,1,30.7
+63,Regular season round 2,Saiyan,Warriors,2,0,5,32.2
+63,Regular season round 2,Bombed,Warriors,4,2,5,32.2
+63,Regular season round 2,Retroaction,Warriors,1,0,1,8.9
+63,Regular season round 2,Monkey boy,Warriors,1,2,4,23.2
+63,Regular season round 2,Turban,Warriors,2,2,1,28.2
+63,Regular season round 2,Digital,Warriors,2,0,1,3.9
+63,Regular season round 2,Jon,OMEGA,0,3,2,32.0
+63,Regular season round 2,Kepi,OMEGA,0,1,2,23.5
+63,Regular season round 2,Dequadin,OMEGA,2,2,0,8.5
+63,Regular season round 2,Ghost,OMEGA,2,3,1,23.4
+63,Regular season round 2,Captor,OMEGA,2,3,3,32.2
+16,Regular season round 3,Saiyan,Warriors,2,2,8,43.9
+16,Regular season round 3,Retroaction,Warriors,6,0,4,43.9
+16,Regular season round 3,Turban,Warriors,1,2,6,43.9
+16,Regular season round 3,Bombed,Warriors,3,1,2,43.9
+16,Regular season round 3,Dev,LEGOS,1,3,2,36.7
+16,Regular season round 3,Bo,LEGOS,0,0,0,11.9
+16,Regular season round 3,Curi,LEGOS,1,1,1,4.5
+16,Regular season round 3,UKU,LEGOS,0,2,2,19.4
+16,Regular season round 3,Creature,LEGOS,2,3,2,38.8
+16,Regular season round 3,Krilyu,LEGOS,1,1,2,42.5
+16,Regular season round 3,Easton,LEGOS,0,2,0,1.4
+17,Regular season round 3,Jon,OMEGA,3,2,6,35.1
+17,Regular season round 3,Kepi,OMEGA,3,2,1,35.1
+17,Regular season round 3,Bettysueyo,OMEGA,1,1,0,19.2
+17,Regular season round 3,Ghost,OMEGA,4,0,5,15.8
+17,Regular season round 3,Euripedes,OMEGA,1,2,7,35.1
+17,Regular season round 3,Crescendo,Eternal,3,3,3,35.1
+17,Regular season round 3,Download,Eternal,0,0,0,4.7
+17,Regular season round 3,Banzi,Eternal,0,2,3,27.8
+17,Regular season round 3,MACrelliK,Eternal,0,1,0,1.9
+17,Regular season round 3,Sword,Eternal,0,2,0,5.4
+17,Regular season round 3,Loveless,Eternal,1,1,0,13.6
+17,Regular season round 3,Aiti,Eternal,3,3,1,34.0
+20,Regular season round 4,Saiyan,Warriors,1,1,4,45.0
+20,Regular season round 4,Bombed,Warriors,1,2,4,45.0
+20,Regular season round 4,Monkey boy,Warriors,3,1,0,29.6
+20,Regular season round 4,Retroaction,Warriors,1,1,2,15.3
+20,Regular season round 4,Dreamwin,Warriors,0,0,0,3.8
+20,Regular season round 4,Turban,Warriors,3,2,3,41.2
+20,Regular season round 4,The seven year itch,Foundation,1,2,1,39.3
+20,Regular season round 4,Dre,Foundation,3,1,0,5.7
+20,Regular season round 4,SK,Foundation,1,2,3,45.0
+20,Regular season round 4,Peabrain,Foundation,1,0,1,16.3
+20,Regular season round 4,Candyman,Foundation,1,1,0,28.6
+20,Regular season round 4,Carnage,Foundation,0,3,3,44.5
+66,Regular season round 4,Jon,OMEGA,1,2,1,23.5
+66,Regular season round 4,Bettysueyo,OMEGA,2,0,2,12.2
+66,Regular season round 4,Avalon,OMEGA,0,0,0,8.8
+66,Regular season round 4,Ghost,OMEGA,2,2,6,26.8
+66,Regular season round 4,Captor,OMEGA,1,1,5,35.6
+66,Regular season round 4,Euripedes,OMEGA,4,2,2,35.5
+66,Regular season round 4,UKU,LEGOS,3,3,2,28.9
+66,Regular season round 4,Dev,LEGOS,0,3,2,23.9
+66,Regular season round 4,Krilyu,LEGOS,1,3,3,34.6
+66,Regular season round 4,Marky,LEGOS,2,1,3,23.6
+66,Regular season round 4,Curi,LEGOS,0,2,1,7.9
+23,Regular season round 5,Jon,OMEGA,1,2,7,22.7
+23,Regular season round 5,Ghost,OMEGA,4,1,3,22.7
+23,Regular season round 5,Bettysueyo,OMEGA,3,1,2,22.7
+23,Regular season round 5,Euripedes,OMEGA,2,1,6,21.9
+23,Regular season round 5,Saiyan,Warriors,0,3,1,21.5
+23,Regular season round 5,Bombed,Warriors,1,3,3,21.6
+23,Regular season round 5,Monkey boy,Warriors,3,3,0,21.7
+23,Regular season round 5,Turban,Warriors,0,3,2,20.5
+22,Regular season round 5,Loveless,Eternal,3,1,3,23.7
+22,Regular season round 5,Crescendo,Eternal,5,1,3,23.7
+22,Regular season round 5,Banzi,Eternal,2,2,4,23.7
+22,Regular season round 5,Sword,Eternal,1,1,2,23.7
+22,Regular season round 5,The seven year itch,Foundation,0,2,0,13.1
+22,Regular season round 5,Dre,Foundation,1,1,0,7.6
+22,Regular season round 5,Shaun,Foundation,1,0,0,5.8
+22,Regular season round 5,Carnage,Foundation,1,3,1,12.5
+22,Regular season round 5,187,Foundation,2,3,2,22.7
+22,Regular season round 5,Candyman,Foundation,0,3,1,14.1
+28,Regular season round 7,Jon,OMEGA,0,1,4,13.3
+28,Regular season round 7,Euripedes,OMEGA,4,0,0,8.58
+28,Regular season round 7,Bettysueyo,OMEGA,0,0,1,8.8
+28,Regular season round 7,Ghost,OMEGA,4,1,3,13.15
+28,Regular season round 7,Dequadin,OMEGA,0,0,2,11.85
+28,Regular season round 7,Avalon,OMEGA,0,0,1,10.1
+28,Regular season round 7,Kepi,OMEGA,4,0,5,21.98
+28,Regular season round 7,UKU,LEGOS,0,2,0,12.25
+28,Regular season round 7,Easton,LEGOS,1,1,0,2.1
+28,Regular season round 7,Low,LEGOS,1,3,0,21.75
+28,Regular season round 7,Marky,LEGOS,0,3,1,16.77
+28,Regular season round 7,Krilyu,LEGOS,0,3,0,11.03
+29,Regular season round 7,Saiyan,Warriors,3,1,6,45.0
+29,Regular season round 7,Bombed,Warriors,3,2,3,45.0
+29,Regular season round 7,Retroaction,Warriors,2,1,5,45.0
+29,Regular season round 7,Bone,Warriors,1,2,4,45.0
+29,Regular season round 7,The seven year itch,Foundation,1,2,2,45.0
+29,Regular season round 7,Dre,Foundation,1,2,1,36.13
+29,Regular season round 7,Shaun,Foundation,0,1,2,5.52
+29,Regular season round 7,Storm,Foundation,0,0,0,21.0
+29,Regular season round 7,187,Foundation,1,1,3,23.93
+29,Regular season round 7,Carnage,Foundation,3,3,1,42.47
+68,Regular season round 10,Loveless,Eternal,4,2,3,35.42
+68,Regular season round 10,Aiti,Eternal,2,2,6,35.42
+68,Regular season round 10,Banzi,Eternal,1,2,3,35.42
+68,Regular season round 10,Crescendo,Eternal,4,1,4,35.42
+68,Regular season round 10,Jon,OMEGA,1,3,1,26.53
+68,Regular season round 10,Dequadin,OMEGA,2,3,2,34.13
+68,Regular season round 10,Euripedes,OMEGA,0,3,5,32.25
+68,Regular season round 10,Ghost,OMEGA,4,3,1,34.42
+25,Regular season round 6,The seven year itch,Foundation,2,2,5,38.68
+25,Regular season round 6,Candyman,Foundation,2,2,0,28.65
+25,Regular season round 6,SK,Foundation,0,0,0,5.37
+25,Regular season round 6,Something Dutch,Foundation,2,0,2,4.63
+25,Regular season round 6,Carnage,Foundation,4,2,6,38.68
+25,Regular season round 6,187,Foundation,1,3,3,31.88
+25,Regular season round 6,UKU,LEGOS,4,3,3,37.43
+25,Regular season round 6,Low,LEGOS,1,3,3,38.68
+25,Regular season round 6,Dev,LEGOS,1,3,6,36.08
+25,Regular season round 6,Krilyu,LEGOS,3,3,5,35.5
+67,Regular season round 6,Loveless,Eternal,3,2,0,52.67
+67,Regular season round 6,Aiti,Eternal,3,1,0,52.67
+67,Regular season round 6,Banzi,Eternal,0,1,2,52.67
+67,Regular season round 6,Crescendo,Eternal,0,1,4,52.67
+67,Regular season round 6,Saiyan,Warriors,0,1,2,52.67
+67,Regular season round 6,Bombed,Warriors,4,2,1,52.67
+67,Regular season round 6,Monkey boy,Warriors,0,2,2,34.73
+67,Regular season round 6,Bone,Warriors,0,1,1,17.77
+67,Regular season round 6,Retroaction,Warriors,1,0,2,52.67
+30,Regular season round 8,UKU,LEGOS,3,2,2,29.17
+30,Regular season round 8,Low,LEGOS,4,0,0,7.37
+30,Regular season round 8,Curi,LEGOS,2,1,1,32.15
+30,Regular season round 8,Marky,LEGOS,0,0,1,4.38
+30,Regular season round 8,Dev,LEGOS,2,1,4,36.57
+30,Regular season round 8,Krilyu,LEGOS,1,2,4,36.57
+30,Regular season round 8,Loveless,Eternal,2,3,2,36.42
+30,Regular season round 8,Aiti,Eternal,1,3,4,36.57
+30,Regular season round 8,Banzi,Eternal,1,3,2,29.83
+30,Regular season round 8,Download,Eternal,0,0,0,4.45
+30,Regular season round 8,Sword,Eternal,2,2,0,20.33
+30,Regular season round 8,Crescendo,Eternal,0,1,1,11.45
+32,Regular season round 8,Jon,OMEGA,1,3,0,25.95
+32,Regular season round 8,Captor,OMEGA,3,1,2,53.18
+32,Regular season round 8,Ghost,OMEGA,2,1,3,53.18
+32,Regular season round 8,Robo,OMEGA,2,1,2,28.5
+32,Regular season round 8,Kepi,OMEGA,0,1,2,24.67
+32,Regular season round 8,Candyman,Foundation,2,1,4,53.18
+32,Regular season round 8,Something Dutch,Foundation,1,1,0,11.08
+32,Regular season round 8,The seven year itch,Foundation,0,0,1,42.07
+32,Regular season round 8,187,Foundation,1,3,1,53.18
+32,Regular season round 8,Carnage,Foundation,2,2,3,27.53
+32,Regular season round 8,Dre,Foundation,1,1,0,10.82
+35,Regular season round 9,Saiyan,Warriors,3,1,4,25.7
+35,Regular season round 9,Bombed,Warriors,1,3,2,22.32
+35,Regular season round 9,Bone,Warriors,0,0,2,8.68
+35,Regular season round 9,Retroaction,Warriors,1,0,4,17.0
+35,Regular season round 9,Monkey boy,Warriors,6,1,0,25.7
+35,Regular season round 9,Loveless,Eternal,0,2,1,16.3
+35,Regular season round 9,MACrelliK,Eternal,0,1,1,7.98
+35,Regular season round 9,Banzi,Eternal,2,3,1,21.9
+35,Regular season round 9,Aiti,Eternal,1,3,0,23.92
+35,Regular season round 9,Crescendo,Eternal,1,3,0,24.7
+70,Regular season round 9,Creature,LEGOS,3,1,3,33.2
+70,Regular season round 9,Dev,LEGOS,4,2,3,33.2
+70,Regular season round 9,Krilyu,LEGOS,3,1,5,31.98
+70,Regular season round 9,Bo,LEGOS,0,0,0,1.2
+70,Regular season round 9,Marky,LEGOS,0,1,0,8.48
+70,Regular season round 9,Curi,LEGOS,0,0,1,18.37
+70,Regular season round 9,UKU,LEGOS,2,0,2,6.3
+70,Regular season round 9,The seven year itch,Foundation,3,3,1,33.2
+70,Regular season round 9,Peabrain,Foundation,0,3,3,33.12
+70,Regular season round 9,Shaun,Foundation,0,0,0,4.33
+70,Regular season round 9,187,Foundation,0,3,2,24.57
+70,Regular season round 9,Storm,Foundation,0,0,0,7.42
+70,Regular season round 9,Carnage,Foundation,2,3,2,23.27
+71,Regular season round 6,Loveless,Eternal,1,1,6,23.42
+71,Regular season round 6,Aiti,Eternal,1,0,4,23.42
+71,Regular season round 6,Banzi,Eternal,3,1,3,23.42
+71,Regular season round 6,Crescendo,Eternal,4,2,2,23.42
+71,Regular season round 6,Saiyan,Warriors,0,3,2,22.42
+71,Regular season round 6,Bombed,Warriors,3,3,0,21.53
+71,Regular season round 6,Bone,Warriors,0,3,1,18.53
+71,Regular season round 6,Retroaction,Warriors,0,0,0,6.23
+71,Regular season round 6,Turban,Warriors,1,3,3,15.62
+38,Regular season round 10,Saiyan,Warriors,5,1,1,45.0
+38,Regular season round 10,Bombed,Warriors,1,2,4,45.0
+38,Regular season round 10,Retroaction,Warriors,3,3,3,43.05
+38,Regular season round 10,Dreamwin,Warriors,0,0,1,13.37
+38,Regular season round 10,Bone,Warriors,1,1,2,15.88
+38,Regular season round 10,Turban,Warriors,0,2,5,15.57
+38,Regular season round 10,Dev,LEGOS,4,2,3,45.0
+38,Regular season round 10,Creature,LEGOS,2,3,1,39.5
+38,Regular season round 10,Curi,LEGOS,1,0,1,32.2
+38,Regular season round 10,Low,LEGOS,1,2,4,12.77
+38,Regular season round 10,Krilyu,LEGOS,1,3,2,41.93
+72,Quarterfinal,Candyman,Foundation,1,0,2,51.28
+72,Quarterfinal,Carnage,Foundation,3,1,1,51.28
+72,Quarterfinal,SK,Foundation,0,2,1,51.28
+72,Quarterfinal,187,Foundation,0,0,0,26.28
+72,Quarterfinal,The seven year itch,Foundation,0,0,2,24.97
+72,Quarterfinal,Loveless,Eternal,1,2,0,51.28
+72,Quarterfinal,Aiti,Eternal,1,1,2,51.28
+72,Quarterfinal,Banzi,Eternal,0,0,1,51.28
+72,Quarterfinal,Crescendo,Eternal,1,1,1,51.28
+74,Quarterfinal,Loveless,Eternal,3,1,3,21.58
+74,Quarterfinal,Aiti,Eternal,5,1,4,21.58
+74,Quarterfinal,Banzi,Eternal,1,0,4,21.58
+74,Quarterfinal,Crescendo,Eternal,2,1,6,21.58
+74,Quarterfinal,The seven year itch,Foundation,1,3,0,18.93
+74,Quarterfinal,Candyman,Foundation,1,3,1,17.9
+74,Quarterfinal,Carnage,Foundation,0,2,0,15.88
+74,Quarterfinal,Something Dutch,Foundation,0,1,0,0.95
+74,Quarterfinal,SK,Foundation,0,0,0,13.3
+74,Quarterfinal,187,Foundation,1,3,1,7.27
+75,Quarterfinal,187,Foundation,0,2,4,46.6
+75,Quarterfinal,Candyman,Foundation,1,0,2,46.6
+75,Quarterfinal,Carnage,Foundation,4,2,1,46.12
+75,Quarterfinal,SK,Foundation,0,0,1,22.0
+75,Quarterfinal,The seven year itch,Foundation,0,0,2,24.5
+75,Quarterfinal,Loveless,Eternal,2,3,1,43.28
+75,Quarterfinal,Aiti,Eternal,1,1,2,46.6
+75,Quarterfinal,Banzi,Eternal,1,0,1,46.6
+75,Quarterfinal,Crescendo,Eternal,0,1,2,46.6
+73,Semifinal,Saiyan,Warriors,5,0,4,35.55
+73,Semifinal,Bombed,Warriors,2,3,4,27.98
+73,Semifinal,Dreamwin,Warriors,0,1,1,7.93
+73,Semifinal,Bone,Warriors,0,0,1,12.93
+73,Semifinal,Turban,Warriors,2,0,4,14.67
+73,Semifinal,Retroaction,Warriors,3,1,6,35.55
+73,Semifinal,UKU,LEGOS,1,3,3,34.83
+73,Semifinal,Creature,LEGOS,0,2,0,20.98
+73,Semifinal,Low,LEGOS,0,0,0,4.62
+73,Semifinal,Marky,LEGOS,1,1,1,4.02
+73,Semifinal,Curi,LEGOS,1,3,3,35.18
+73,Semifinal,Krilyu,LEGOS,1,3,1,35.55
+79,Semifinal,Saiyan,Warriors,4,1,5,29.93
+79,Semifinal,Bombed,Warriors,2,2,4,29.93
+79,Semifinal,Retroaction,Warriors,0,0,2,10.5
+79,Semifinal,Bone,Warriors,4,1,2,19.33
+79,Semifinal,Turban,Warriors,2,3,3,28.97
+79,Semifinal,UKU,LEGOS,0,3,2,29.87
+79,Semifinal,Creature,LEGOS,2,3,2,25.45
+79,Semifinal,Krilyu,LEGOS,2,3,3,29.93
+79,Semifinal,Marky,LEGOS,0,1,0,1.92
+79,Semifinal,Curi,LEGOS,3,2,0,26.97
+77,Semifinal,The seven year itch,Foundation,1,0,2,57.68
+77,Semifinal,187,Foundation,0,0,1,57.68
+77,Semifinal,Candyman,Foundation,0,0,1,57.68
+77,Semifinal,Carnage,Foundation,2,1,1,57.68
+77,Semifinal,Jon,OMEGA,0,1,0,57.68
+77,Semifinal,Captor,OMEGA,0,0,0,57.68
+77,Semifinal,Euripedes,OMEGA,0,1,1,57.68
+77,Semifinal,Ghost,OMEGA,1,1,0,57.68
+78,Semifinal,The seven year itch,Foundation,1,0,6,33.1
+78,Semifinal,Dre,Foundation,0,0,1,0.63
+78,Semifinal,187,Foundation,4,2,2,33.78
+78,Semifinal,Candyman,Foundation,2,0,4,33.78
+78,Semifinal,Carnage,Foundation,5,2,6,33.78
+78,Semifinal,Jon,OMEGA,1,3,1,31.6
+78,Semifinal,Bettysueyo,OMEGA,0,3,2,32.1
+78,Semifinal,Captor,OMEGA,2,3,2,33.78
+78,Semifinal,Ghost,OMEGA,1,3,2,24.8
+80,Final,Saiyan,Warriors,2,1,3,45.0
+80,Final,Bombed,Warriors,1,1,5,45.0
+80,Final,Monkey boy,Warriors,1,2,2,45.0
+80,Final,Turban,Warriors,2,1,1,45.0
+80,Final,The seven year itch,Foundation,0,0,2,31.77
+80,Final,SK,Foundation,0,1,2,13.2
+80,Final,187,Foundation,0,3,2,41.68
+80,Final,Candyman,Foundation,2,0,1,45.0
+80,Final,Carnage,Foundation,3,2,2,45.0
+81,Final,Saiyan,Warriors,2,0,4,24.37
+81,Final,Bombed,Warriors,3,2,5,24.37
+81,Final,Monkey boy,Warriors,3,2,3,24.37
+81,Final,Turban,Warriors,4,0,2,24.37
+81,Final,The seven year itch,Foundation,0,3,1,22.35
+81,Final,187,Foundation,0,2,1,23.68
+81,Final,Dre,Foundation,1,1,0,0.65
+81,Final,Candyman,Foundation,2,3,0,23.62
+81,Final,Carnage,Foundation,1,3,0,21.93

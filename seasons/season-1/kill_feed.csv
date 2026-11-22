@@ -1,0 +1,494 @@
+match,second,killer,killer_team,victim,victim_team
+23,154,Ghost,OMEGA,Turban,Warriors
+23,248,Ghost,OMEGA,Saiyan,Warriors
+23,381,Bettysueyo,OMEGA,Saiyan,Warriors
+23,660,Bettysueyo,OMEGA,Jon,OMEGA
+23,759,Jon,OMEGA,Turban,Warriors
+23,799,Ghost,OMEGA,Monkey boy,Warriors
+23,810,Bombed,Warriors,Bettysueyo,OMEGA
+23,815,Monkey boy,Warriors,Ghost,OMEGA
+23,827,Monkey boy,Warriors,Euripedes,OMEGA
+23,837,Euripedes,OMEGA,Bombed,Warriors
+23,854,Monkey boy,Warriors,Jon,OMEGA
+23,1206,Bettysueyo,OMEGA,Bombed,Warriors
+23,1242,Euripedes,OMEGA,Turban,Warriors
+23,1306,Bettysueyo,OMEGA,Saiyan,Warriors
+23,1310,Ghost,OMEGA,Monkey boy,Warriors
+66,597,Krilyu,LEGOS,Jon,OMEGA
+66,663,Jon,OMEGA,Dev,LEGOS
+66,663,Jon,OMEGA,Ghost,OMEGA
+66,913,Marky,LEGOS,Euripedes,OMEGA
+66,956,Captor,OMEGA,UKU,LEGOS
+66,964,Ghost,OMEGA,Krilyu,LEGOS
+66,1121,Euripedes,OMEGA,Dev,LEGOS
+66,1129,Marky,LEGOS,Euripedes,OMEGA
+66,1129,Euripedes,OMEGA,Marky,LEGOS
+66,1255,UKU,LEGOS,Jon,OMEGA
+66,1450,UKU,LEGOS,Ghost,OMEGA
+66,1450,UKU,LEGOS,Dev,LEGOS
+66,1606,Ghost,OMEGA,UKU,LEGOS
+66,1655,Bettysueyo,OMEGA,Curi,LEGOS
+66,1749,UKU,LEGOS,Captor,OMEGA
+66,1751,Euripedes,OMEGA,UKU,LEGOS
+66,1905,Bettysueyo,OMEGA,Curi,LEGOS
+66,1964,Euripedes,OMEGA,Krilyu,LEGOS
+63,231,Retroaction,Warriors,Captor,OMEGA
+63,232,Bombed,Warriors,Kepi,OMEGA
+63,306,Saiyan,Warriors,Jon,OMEGA
+63,477,Bombed,Warriors,Ghost,OMEGA
+63,508,Ghost,OMEGA,Bombed,Warriors
+63,897,Turban,Warriors,Jon,OMEGA
+63,919,Captor,OMEGA,Turban,Warriors
+63,1025,Bombed,Warriors,Ghost,OMEGA
+63,1288,Ghost,OMEGA,Monkey boy,Warriors
+63,1393,Captor,OMEGA,Turban,Warriors
+63,1393,Turban,Warriors,Captor,OMEGA
+63,1415,Bombed,Warriors,Ghost,OMEGA
+63,1621,Saiyan,Warriors,Dequadin,OMEGA
+63,1654,Dequadin,OMEGA,Bombed,Warriors
+63,1830,Dequadin,OMEGA,Monkey boy,Warriors
+63,1934,Digital,Warriors,Dequadin,OMEGA
+63,1935,Monkey boy,Warriors,Jon,OMEGA
+63,1944,Digital,Warriors,Captor,OMEGA
+20,456,Monkey boy,Warriors,Carnage,Foundation
+20,515,Monkey boy,Warriors,The seven year itch,Foundation
+20,595,The seven year itch,Foundation,Bombed,Warriors
+20,942,Peabrain,Foundation,Saiyan,Warriors
+20,980,SK,Foundation,Monkey boy,Warriors
+20,1021,Candyman,Foundation,Turban,Warriors
+20,1085,Turban,Warriors,SK,Foundation
+20,1086,Monkey boy,Warriors,Candyman,Foundation
+20,2000,Turban,Warriors,Carnage,Foundation
+20,2135,Saiyan,Warriors,SK,Foundation
+20,2272,Retroaction,Warriors,The seven year itch,Foundation
+20,2433,Dre,Foundation,Bombed,Warriors
+20,2615,Dre,Foundation,Turban,Warriors
+20,2681,Dre,Foundation,Retroaction,Warriors
+20,2687,Turban,Warriors,Carnage,Foundation
+20,2714,Bombed,Warriors,Dre,Foundation
+10,310,Carnage,Foundation,Euripedes,OMEGA
+10,1237,Carnage,Foundation,Ghost,OMEGA
+10,1245,187,Foundation,Bettysueyo,OMEGA
+10,1264,187,Foundation,Jon,OMEGA
+10,1353,Jon,OMEGA,Carnage,Foundation
+10,1752,Kepi,OMEGA,Dre,Foundation
+10,1818,Kepi,OMEGA,Jon,OMEGA
+10,1978,187,Foundation,Ghost,OMEGA
+10,1998,Ghost,OMEGA,The seven year itch,Foundation
+10,2157,Carnage,Foundation,Jon,OMEGA
+10,2178,The seven year itch,Foundation,Kepi,OMEGA
+10,2324,Carnage,Foundation,Bettysueyo,OMEGA
+10,2384,Dre,Foundation,Ghost,OMEGA
+10,2480,187,Foundation,Bettysueyo,OMEGA
+10,2483,Kepi,OMEGA,Carnage,Foundation
+10,2485,Dre,Foundation,Kepi,OMEGA
+9,118,Valhalla,DEGEN,Charas,Warriors
+9,245,Legacy,DEGEN,Saiyan,Warriors
+9,336,Suri,DEGEN,Charas,Warriors
+9,495,Valhalla,DEGEN,Grunt,Warriors
+9,595,Monkey boy,Warriors,Suri,DEGEN
+9,595,Mindriot,DEGEN,Monkey boy,Warriors
+9,626,Suri,DEGEN,Bombed,Warriors
+9,721,Suri,DEGEN,Monkey boy,Warriors
+9,721,Monkey boy,Warriors,Suri,DEGEN
+9,795,Valhalla,DEGEN,Bombed,Warriors
+9,887,Mindriot,DEGEN,Saiyan,Warriors
+9,960,Bombed,Warriors,Valhalla,DEGEN
+9,1166,Valhalla,DEGEN,Monkey boy,Warriors
+9,1200,Valhalla,DEGEN,Bombed,Warriors
+17,50,Kepi,OMEGA,Sword,Eternal
+17,186,Crescendo,Eternal,Kepi,OMEGA
+17,329,Bettysueyo,OMEGA,Sword,Eternal
+17,727,Loveless,Eternal,Bettysueyo,OMEGA
+17,1067,Aiti,Eternal,Euripedes,OMEGA
+17,1155,Jon,OMEGA,Loveless,Eternal
+17,1184,Aiti,Eternal,Jon,OMEGA
+17,1236,Jon,OMEGA,Banzi,Eternal
+17,1241,Ghost,OMEGA,Aiti,Eternal
+17,1301,Ghost,OMEGA,Crescendo,Eternal
+17,1567,Euripedes,OMEGA,Crescendo,Eternal
+17,1667,Jon,OMEGA,Banzi,Eternal
+17,1744,Ghost,OMEGA,Aiti,Eternal
+17,1787,Aiti,Eternal,Euripedes,OMEGA
+17,1891,Crescendo,Eternal,Kepi,OMEGA
+17,2056,Ghost,OMEGA,Aiti,Eternal
+17,2085,Kepi,OMEGA,MACrelliK,Eternal
+17,2092,Crescendo,Eternal,Jon,OMEGA
+17,2121,Kepi,OMEGA,Crescendo,Eternal
+16,779,Curi,LEGOS,Saiyan,Warriors
+16,923,Creature,LEGOS,Turban,Warriors
+16,924,Bombed,Warriors,Curi,LEGOS
+16,1032,Retroaction,Warriors,Creature,LEGOS
+16,1074,Creature,LEGOS,Turban,Warriors
+16,1138,Dev,LEGOS,Saiyan,Warriors
+16,1245,Krilyu,LEGOS,Bombed,Warriors
+16,1318,Saiyan,Warriors,UKU,LEGOS
+16,1342,Retroaction,Warriors,Dev,LEGOS
+16,1502,Retroaction,Warriors,Creature,LEGOS
+16,1546,Retroaction,Warriors,Dev,LEGOS
+16,2159,Retroaction,Warriors,UKU,LEGOS
+16,2217,Bombed,Warriors,Dev,LEGOS
+16,2229,Bombed,Warriors,Krilyu,LEGOS
+16,2341,Saiyan,Warriors,Creature,LEGOS
+16,2584,Retroaction,Warriors,Easton,LEGOS
+16,2648,Turban,Warriors,Easton,LEGOS
+13,173,Crescendo,Eternal,187,Foundation
+13,770,Carnage,Foundation,Crescendo,Eternal
+13,990,Carnage,Foundation,Sword,Eternal
+13,1024,Loveless,Eternal,Candyman,Foundation
+13,1077,Sword,Eternal,Crescendo,Eternal
+13,1090,The seven year itch,Foundation,Loveless,Eternal
+13,1119,SK,Foundation,Loveless,Eternal
+13,1174,Crescendo,Eternal,Carnage,Foundation
+13,1187,Aiti,Eternal,SK,Foundation
+13,1631,Sword,Eternal,Carnage,Foundation
+13,1631,Sword,Eternal,Loveless,Eternal
+13,1656,Sword,Eternal,The seven year itch,Foundation
+13,1709,Candyman,Foundation,Sword,Eternal
+13,1740,The seven year itch,Foundation,Macuto,Eternal
+13,1775,Carnage,Foundation,Aiti,Eternal
+13,1857,Candyman,Foundation,Sword,Eternal
+13,1910,Candyman,Foundation,Aiti,Eternal
+13,1980,Carnage,Foundation,Aiti,Eternal
+62,1126,Suri,DEGEN,Krilyu,LEGOS
+62,1284,Creature,LEGOS,Suri,DEGEN
+62,1286,Tool,DEGEN,Creature,LEGOS
+62,1441,Legacy,DEGEN,Dev,LEGOS
+62,1509,Creature,LEGOS,Tunahead,DEGEN
+62,1523,Dev,LEGOS,Tool,DEGEN
+62,1572,Krilyu,LEGOS,Suri,DEGEN
+62,1634,Tunahead,DEGEN,Creature,LEGOS
+62,1733,Krilyu,LEGOS,Suri,DEGEN
+62,1749,Tunahead,DEGEN,Dev,LEGOS
+62,1820,Krilyu,LEGOS,Legacy,DEGEN
+62,2093,Krilyu,LEGOS,Legacy,DEGEN
+62,2149,Krilyu,LEGOS,Tunahead,DEGEN
+62,2240,Dev,LEGOS,Legacy,DEGEN
+62,2297,UKU,LEGOS,Dev,LEGOS
+62,2580,Creature,LEGOS,Tunahead,DEGEN
+11,45,Creature,LEGOS,Paz,Eternal
+11,215,Krilyu,LEGOS,Crescendo,Eternal
+11,276,MACrelliK,Eternal,Bo,LEGOS
+11,363,Loveless,Eternal,Creature,LEGOS
+11,436,Krilyu,LEGOS,Loveless,Eternal
+11,496,Banzi,Eternal,Curi,LEGOS
+11,539,Sword,Eternal,Krilyu,LEGOS
+11,681,Creature,LEGOS,Banzi,Eternal
+11,777,Krilyu,LEGOS,Crescendo,Eternal
+11,818,Loveless,Eternal,Krilyu,LEGOS
+11,845,Crescendo,Eternal,UKU,LEGOS
+11,845,UKU,LEGOS,Crescendo,Eternal
+11,849,Sword,Eternal,Creature,LEGOS
+11,968,Krilyu,LEGOS,Loveless,Eternal
+11,1069,Curi,LEGOS,Sword,Eternal
+11,1167,UKU,LEGOS,Creature,LEGOS
+11,1168,Creature,LEGOS,Loveless,Eternal
+11,1173,Curi,LEGOS,Sword,Eternal
+11,1186,Curi,LEGOS,Banzi,Eternal
+11,1265,Curi,LEGOS,Banzi,Eternal
+22,243,Crescendo,Eternal,Candyman,Foundation
+22,244,Shaun,Foundation,Crescendo,Eternal
+22,296,Crescendo,Eternal,The seven year itch,Foundation
+22,655,Crescendo,Eternal,The seven year itch,Foundation
+22,709,Loveless,Eternal,Candyman,Foundation
+22,796,187,Foundation,Banzi,Eternal
+22,845,Sword,Eternal,Carnage,Foundation
+22,862,Loveless,Eternal,Candyman,Foundation
+22,955,Banzi,Eternal,Carnage,Foundation
+22,975,Loveless,Eternal,187,Foundation
+22,987,Carnage,Foundation,Loveless,Eternal
+22,1029,187,Foundation,Banzi,Eternal
+22,1034,Dre,Foundation,Sword,Eternal
+22,1125,Crescendo,Eternal,Carnage,Foundation
+22,1268,Crescendo,Eternal,Dre,Foundation
+22,1285,Banzi,Eternal,187,Foundation
+28,304,Kepi,OMEGA,Krilyu,LEGOS
+28,470,Kepi,OMEGA,UKU,LEGOS
+28,670,Kepi,OMEGA,Krilyu,LEGOS
+28,676,Ghost,OMEGA,Krilyu,LEGOS
+28,710,Ghost,OMEGA,Marky,LEGOS
+28,735,Ghost,OMEGA,UKU,LEGOS
+28,803,Easton,LEGOS,Jon,OMEGA
+28,875,Euripedes,OMEGA,Easton,LEGOS
+28,918,Euripedes,OMEGA,Marky,LEGOS
+28,932,Euripedes,OMEGA,Low,LEGOS
+28,1020,Kepi,OMEGA,Marky,LEGOS
+28,1167,Ghost,OMEGA,Low,LEGOS
+28,1330,Low,LEGOS,Ghost,OMEGA
+28,1333,Euripedes,OMEGA,Low,LEGOS
+29,1229,Bombed,Warriors,Carnage,Foundation
+29,1511,Retroaction,Warriors,The seven year itch,Foundation
+29,1592,Carnage,Foundation,Saiyan,Warriors
+29,1603,Bone,Warriors,Carnage,Foundation
+29,1684,Bombed,Warriors,Dre,Foundation
+29,1779,Dre,Foundation,Bombed,Warriors
+29,1800,The seven year itch,Foundation,Bone,Warriors
+29,2013,Saiyan,Warriors,Dre,Foundation
+29,2326,Carnage,Foundation,Bombed,Warriors
+29,2374,187,Foundation,Bone,Warriors
+29,2423,Carnage,Foundation,Retroaction,Warriors
+29,2517,Saiyan,Warriors,Shaun,Foundation
+29,2550,Bombed,Warriors,187,Foundation
+29,2562,Retroaction,Warriors,Carnage,Foundation
+29,2653,Saiyan,Warriors,The seven year itch,Foundation
+68,506,Dequadin,OMEGA,Aiti,Eternal
+68,507,Aiti,Eternal,Jon,OMEGA
+68,776,Aiti,Eternal,Dequadin,OMEGA
+68,899,Loveless,Eternal,Euripedes,OMEGA
+68,936,Jon,OMEGA,Banzi,Eternal
+68,1586,Loveless,Eternal,Jon,OMEGA
+68,1605,Crescendo,Eternal,Euripedes,OMEGA
+68,1606,Crescendo,Eternal,Jon,OMEGA
+68,1610,Ghost,OMEGA,Loveless,Eternal
+68,1804,Ghost,OMEGA,Aiti,Eternal
+68,1891,Crescendo,Eternal,Ghost,OMEGA
+68,1891,Ghost,OMEGA,Crescendo,Eternal
+68,1893,Dequadin,OMEGA,Banzi,Eternal
+68,1932,Crescendo,Eternal,Dequadin,OMEGA
+68,1949,Banzi,Eternal,Euripedes,OMEGA
+68,2062,Loveless,Eternal,Dequadin,OMEGA
+68,2066,Ghost,OMEGA,Loveless,Eternal
+68,2077,Loveless,Eternal,Ghost,OMEGA
+25,61,Low,LEGOS,Candyman,Foundation
+25,181,Carnage,Foundation,Low,LEGOS
+25,402,187,Foundation,Krilyu,LEGOS
+25,426,UKU,LEGOS,Carnage,Foundation
+25,497,Krilyu,LEGOS,Carnage,Foundation
+25,892,Carnage,Foundation,Dev,LEGOS
+25,1019,Candyman,Foundation,UKU,LEGOS
+25,1104,UKU,LEGOS,187,Foundation
+25,1178,UKU,LEGOS,187,Foundation
+25,1178,UKU,LEGOS,Krilyu,LEGOS
+25,1357,UKU,LEGOS,Candyman,Foundation
+25,1513,Candyman,Foundation,UKU,LEGOS
+25,1927,Krilyu,LEGOS,187,Foundation
+25,1967,Krilyu,LEGOS,The seven year itch,Foundation
+25,2111,The seven year itch,Foundation,Dev,LEGOS
+25,2144,Carnage,Foundation,Krilyu,LEGOS
+25,2147,Dev,LEGOS,The seven year itch,Foundation
+25,2179,Carnage,Foundation,Dev,LEGOS
+25,2187,The seven year itch,Foundation,Low,LEGOS
+25,2260,Something Dutch,Foundation,UKU,LEGOS
+25,2335,Something Dutch,Foundation,Low,LEGOS
+67,656,Loveless,Eternal,Bombed,Warriors
+67,964,Aiti,Eternal,Monkey boy,Warriors
+67,1209,Retroaction,Warriors,Banzi,Eternal
+67,1240,Bombed,Warriors,Crescendo,Eternal
+67,1588,Loveless,Eternal,Monkey boy,Warriors
+67,1872,Bombed,Warriors,Aiti,Eternal
+67,1930,Bombed,Warriors,Loveless,Eternal
+67,2503,Aiti,Eternal,Bombed,Warriors
+67,2723,Bombed,Warriors,Loveless,Eternal
+67,3157,Aiti,Eternal,Saiyan,Warriors
+67,3174,Loveless,Eternal,Bone,Warriors
+30,395,Krilyu,LEGOS,Sword,Eternal
+30,512,Curi,LEGOS,Loveless,Eternal
+30,761,Dev,LEGOS,Banzi,Eternal
+30,829,UKU,LEGOS,Sword,Eternal
+30,829,Sword,Eternal,UKU,LEGOS
+30,1054,Sword,Eternal,Dev,LEGOS
+30,1492,UKU,LEGOS,Banzi,Eternal
+30,1577,Dev,LEGOS,Loveless,Eternal
+30,1622,Banzi,Eternal,Curi,LEGOS
+30,1642,UKU,LEGOS,Aiti,Eternal
+30,1642,Aiti,Eternal,UKU,LEGOS
+30,1715,Loveless,Eternal,Krilyu,LEGOS
+30,1804,Curi,LEGOS,Banzi,Eternal
+30,1914,Low,LEGOS,Aiti,Eternal
+30,2192,Low,LEGOS,Crescendo,Eternal
+30,2198,Loveless,Eternal,Krilyu,LEGOS
+30,2199,Low,LEGOS,Loveless,Eternal
+30,2209,Low,LEGOS,Aiti,Eternal
+32,126,Something Dutch,Foundation,Robo,OMEGA
+32,342,Robo,OMEGA,Something Dutch,Foundation
+32,397,Robo,OMEGA,Carnage,Foundation
+32,474,Jon,OMEGA,187,Foundation
+32,475,Carnage,Foundation,Jon,OMEGA
+32,710,Candyman,Foundation,Jon,OMEGA
+32,783,Ghost,OMEGA,Carnage,Foundation
+32,924,Carnage,Foundation,Ghost,OMEGA
+32,1245,187,Foundation,Captor,OMEGA
+32,1424,Captor,OMEGA,Candyman,Foundation
+32,1571,Candyman,Foundation,Jon,OMEGA
+32,1655,Ghost,OMEGA,187,Foundation
+32,2220,Dre,Foundation,Kepi,OMEGA
+32,2338,Captor,OMEGA,Dre,Foundation
+32,3205,Captor,OMEGA,187,Foundation
+35,350,Crescendo,Eternal,Bombed,Warriors
+35,350,Bombed,Warriors,Crescendo,Eternal
+35,417,Saiyan,Warriors,Loveless,Eternal
+35,439,Monkey boy,Warriors,Loveless,Eternal
+35,519,Banzi,Eternal,Bombed,Warriors
+35,552,Banzi,Eternal,Monkey boy,Warriors
+35,573,Saiyan,Warriors,Banzi,Eternal
+35,801,Monkey boy,Warriors,Aiti,Eternal
+35,985,Monkey boy,Warriors,Banzi,Eternal
+35,1032,Retroaction,Warriors,Aiti,Eternal
+35,1146,Saiyan,Warriors,Crescendo,Eternal
+35,1328,Monkey boy,Warriors,Saiyan,Warriors
+35,1328,Monkey boy,Warriors,Banzi,Eternal
+35,1353,Aiti,Eternal,Bombed,Warriors
+35,1449,Monkey boy,Warriors,Aiti,Eternal
+35,1473,Monkey boy,Warriors,MACrelliK,Eternal
+70,333,Krilyu,LEGOS,The seven year itch,Foundation
+70,340,Krilyu,LEGOS,187,Foundation
+70,482,Carnage,Foundation,Marky,LEGOS
+70,824,Dev,LEGOS,Carnage,Foundation
+70,1387,Creature,LEGOS,187,Foundation
+70,1396,Carnage,Foundation,Krilyu,LEGOS
+70,1460,The seven year itch,Foundation,Dev,LEGOS
+70,1538,The seven year itch,Foundation,Creature,LEGOS
+70,1594,Krilyu,LEGOS,Peabrain,Foundation
+70,1715,UKU,LEGOS,Carnage,Foundation
+70,1749,Creature,LEGOS,187,Foundation
+70,1763,The seven year itch,Foundation,Dev,LEGOS
+70,1763,UKU,LEGOS,Peabrain,Foundation
+70,1873,Dev,LEGOS,Carnage,Foundation
+70,1879,Creature,LEGOS,The seven year itch,Foundation
+70,2001,Dev,LEGOS,Peabrain,Foundation
+70,2006,Dev,LEGOS,The seven year itch,Foundation
+71,482,Crescendo,Eternal,Bone,Warriors
+71,820,Banzi,Eternal,Bombed,Warriors
+71,892,Banzi,Eternal,Bone,Warriors
+71,956,Bombed,Warriors,Banzi,Eternal
+71,1008,Bombed,Warriors,Crescendo,Eternal
+71,1126,Crescendo,Eternal,Bone,Warriors
+71,1128,Crescendo,Eternal,Bombed,Warriors
+71,1234,Turban,Warriors,Loveless,Eternal
+71,1250,Bombed,Warriors,Crescendo,Eternal
+71,1278,Aiti,Eternal,Turban,Warriors
+71,1292,Banzi,Eternal,Turban,Warriors
+71,1306,Crescendo,Eternal,Bombed,Warriors
+71,1328,Loveless,Eternal,Turban,Warriors
+38,755,Saiyan,Warriors,Krilyu,LEGOS
+38,1018,Krilyu,LEGOS,Bombed,Warriors
+38,1272,Retroaction,Warriors,Dev,LEGOS
+38,1541,Curi,LEGOS,Saiyan,Warriors
+38,1674,Saiyan,Warriors,Creature,LEGOS
+38,1675,Dev,LEGOS,Bone,Warriors
+38,1732,Bone,Warriors,Krilyu,LEGOS
+38,1890,Retroaction,Warriors,Dev,LEGOS
+38,1920,Retroaction,Warriors,Creature,LEGOS
+38,1998,Dev,LEGOS,Retroaction,Warriors
+38,2173,Creature,LEGOS,Retroaction,Warriors
+38,2226,Creature,LEGOS,Turban,Warriors
+38,2384,Saiyan,Warriors,Creature,LEGOS
+38,2392,Dev,LEGOS,Bombed,Warriors
+38,2518,Saiyan,Warriors,Low,LEGOS
+38,2530,Saiyan,Warriors,Krilyu,LEGOS
+38,2597,Low,LEGOS,Retroaction,Warriors
+38,2695,Bombed,Warriors,Low,LEGOS
+38,2705,Dev,LEGOS,Turban,Warriors
+72,1499,Crescendo,Eternal,SK,Foundation
+72,1521,Carnage,Foundation,Loveless,Eternal
+72,1930,Candyman,Foundation,Crescendo,Eternal
+72,1950,Aiti,Eternal,Carnage,Foundation
+72,2063,Loveless,Eternal,SK,Foundation
+72,2600,Carnage,Foundation,Aiti,Eternal
+72,3092,Carnage,Foundation,Loveless,Eternal
+74,391,Aiti,Eternal,Carnage,Foundation
+74,525,Aiti,Eternal,Carnage,Foundation
+74,673,Crescendo,Eternal,Candyman,Foundation
+74,891,Loveless,Eternal,Candyman,Foundation
+74,978,Crescendo,Eternal,The seven year itch,Foundation
+74,1014,Candyman,Foundation,Crescendo,Eternal
+74,1024,Loveless,Eternal,Something Dutch,Foundation
+74,1034,Aiti,Eternal,The seven year itch,Foundation
+74,1057,187,Foundation,Loveless,Eternal
+74,1088,Aiti,Eternal,Candyman,Foundation
+74,1150,Aiti,Eternal,The seven year itch,Foundation
+74,1150,The seven year itch,Foundation,Aiti,Eternal
+74,1185,Loveless,Eternal,187,Foundation
+74,1247,Banzi,Eternal,187,Foundation
+75,742,Carnage,Foundation,Crescendo,Eternal
+75,1177,Aiti,Eternal,Carnage,Foundation
+75,1305,Carnage,Foundation,Loveless,Eternal
+75,1397,Loveless,Eternal,187,Foundation
+75,2119,Carnage,Foundation,Loveless,Eternal
+75,2400,Loveless,Eternal,187,Foundation
+75,2460,Banzi,Eternal,Carnage,Foundation
+75,2611,Candyman,Foundation,Loveless,Eternal
+75,2812,Carnage,Foundation,Aiti,Eternal
+73,71,UKU,LEGOS,Dreamwin,Warriors
+73,117,Saiyan,Warriors,UKU,LEGOS
+73,243,Bombed,Warriors,Krilyu,LEGOS
+73,279,Retroaction,Warriors,Creature,LEGOS
+73,299,Curi,LEGOS,Bombed,Warriors
+73,409,Saiyan,Warriors,Creature,LEGOS
+73,716,Bombed,Warriors,Krilyu,LEGOS
+73,1332,Retroaction,Warriors,UKU,LEGOS
+73,1365,Turban,Warriors,Curi,LEGOS
+73,1366,Turban,Warriors,Bombed,Warriors
+73,1693,Marky,LEGOS,Bombed,Warriors
+73,1831,Saiyan,Warriors,Marky,LEGOS
+73,1840,Krilyu,LEGOS,Retroaction,Warriors
+73,1945,Retroaction,Warriors,Curi,LEGOS
+73,2112,Saiyan,Warriors,UKU,LEGOS
+73,2125,Turban,Warriors,Curi,LEGOS
+73,2147,Saiyan,Warriors,Krilyu,LEGOS
+79,123,Saiyan,Warriors,Marky,LEGOS
+79,387,Bombed,Warriors,Creature,LEGOS
+79,932,Curi,LEGOS,Turban,Warriors
+79,1121,Bone,Warriors,Krilyu,LEGOS
+79,1251,Saiyan,Warriors,Curi,LEGOS
+79,1344,Saiyan,Warriors,UKU,LEGOS
+79,1405,Krilyu,LEGOS,Bombed,Warriors
+79,1439,Curi,LEGOS,Bone,Warriors
+79,1483,Creature,LEGOS,Saiyan,Warriors
+79,1486,Bombed,Warriors,Creature,LEGOS
+79,1540,Turban,Warriors,Creature,LEGOS
+79,1541,Creature,LEGOS,Turban,Warriors
+79,1628,Saiyan,Warriors,UKU,LEGOS
+79,1751,Turban,Warriors,Curi,LEGOS
+79,1751,Curi,LEGOS,Turban,Warriors
+79,1771,Bone,Warriors,Krilyu,LEGOS
+79,1806,Bone,Warriors,UKU,LEGOS
+79,1810,Bone,Warriors,Krilyu,LEGOS
+79,1810,Krilyu,LEGOS,Bombed,Warriors
+77,1504,Ghost,OMEGA,Carnage,Foundation
+77,1829,The seven year itch,Foundation,Euripedes,OMEGA
+77,2065,Carnage,Foundation,Ghost,OMEGA
+77,3476,Carnage,Foundation,Jon,OMEGA
+78,120,187,Foundation,Bettysueyo,OMEGA
+78,645,Carnage,Foundation,Ghost,OMEGA
+78,698,Ghost,OMEGA,187,Foundation
+78,1184,Carnage,Foundation,Jon,OMEGA
+78,1189,Carnage,Foundation,Ghost,OMEGA
+78,1295,Captor,OMEGA,Carnage,Foundation
+78,1397,187,Foundation,Bettysueyo,OMEGA
+78,1501,Carnage,Foundation,Ghost,OMEGA
+78,1513,Jon,OMEGA,187,Foundation
+78,1525,Carnage,Foundation,Captor,OMEGA
+78,1561,The seven year itch,Foundation,Captor,OMEGA
+78,1704,187,Foundation,Jon,OMEGA
+78,1909,187,Foundation,Jon,OMEGA
+78,1911,Captor,OMEGA,Carnage,Foundation
+78,1940,Candyman,Foundation,Bettysueyo,OMEGA
+78,2041,Candyman,Foundation,Captor,OMEGA
+80,1128,Monkey boy,Warriors,Carnage,Foundation
+80,1334,Carnage,Foundation,Monkey boy,Warriors
+80,1592,Turban,Warriors,187,Foundation
+80,1656,Carnage,Foundation,Bombed,Warriors
+80,1907,Candyman,Foundation,Monkey boy,Warriors
+80,1909,Bombed,Warriors,Carnage,Foundation
+80,2002,Saiyan,Warriors,187,Foundation
+80,2400,Carnage,Foundation,Turban,Warriors
+80,2475,Candyman,Foundation,Saiyan,Warriors
+80,2515,Turban,Warriors,187,Foundation
+80,2680,Saiyan,Warriors,SK,Foundation
+81,377,Candyman,Foundation,Monkey boy,Warriors
+81,443,Saiyan,Warriors,Candyman,Foundation
+81,521,Turban,Warriors,The seven year itch,Foundation
+81,559,Monkey boy,Warriors,Carnage,Foundation
+81,901,Turban,Warriors,187,Foundation
+81,1047,Carnage,Foundation,Bombed,Warriors
+81,1073,Turban,Warriors,The seven year itch,Foundation
+81,1107,Monkey boy,Warriors,Carnage,Foundation
+81,1270,Saiyan,Warriors,Candyman,Foundation
+81,1330,Bombed,Warriors,Carnage,Foundation
+81,1355,Monkey boy,Warriors,The seven year itch,Foundation
+81,1375,Candyman,Foundation,Bombed,Warriors
+81,1413,Turban,Warriors,187,Foundation
+81,1431,Bombed,Warriors,Candyman,Foundation
+81,1476,Dre,Foundation,Monkey boy,Warriors
+81,1476,Bombed,Warriors,Dre,Foundation
