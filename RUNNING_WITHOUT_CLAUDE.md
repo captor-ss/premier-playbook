@@ -3,7 +3,7 @@
 Season One is over (Warriors are champions). The site keeps working with no Claude chat behind it.
 
 ## What keeps running by itself
-- **Netlify site** (subspacereclamation.netlify.app). Every time someone opens it, the page loads live data from this repo:
+- **Netlify site** (premier-playbook.netlify.app, earlier subspacereclamation.netlify.app). Every time someone opens it, the page loads live data from this repo:
   `data.json` (league), `prac.json` (prac games) and `pop/` (online player counts).
 - **GitHub Actions: "Zone and prac updates"** (`.github/workflows/population.yml`). Every 5 minutes it reads new
   Standard Fours prac games from Subspace Reloaded (`scripts/prac_sync.js`, including which ship each pilot flew)
@@ -29,7 +29,7 @@ The exact site files are in `site/`. Two ways:
 2. **Automatic** (recommended): Netlify → Site configuration → Build & deploy → *Link repository* →
    choose `captor-ss/premier-playbook`, build command empty, publish directory `site`. After that,
    any change to `site/` in GitHub goes live by itself.
-After changing `site/index.html`, bump the cache name in `site/sw.js` (`pp-v129` → `pp-v130`) so phones
+After changing `site/index.html`, bump the cache name in `site/sw.js` (`pp-v130` → `pp-v131`) so phones
 pick up the new version.
 
 ## Season Two

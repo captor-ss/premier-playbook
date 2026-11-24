@@ -2107,7 +2107,7 @@ async function gmPubPull(){const c=gmCfg();let rows=null;
   PPI={rows:await ppIngest(rows),at:Date.now()};lbAlerts();
   if(curView==="gm")gmRefresh();if(document.getElementById("lbroot"))lbRefresh();if(curView==="press")prRefresh();if(curView==="pro")vetRefresh();if(curView==="info")show("info",true);if(curView==="home"){const w=$("#lbhome");if(w)w.outerHTML=lbHomeWidget()}}
 /* ---------- Lobby: player-to-player features on the same form + sheet ---------- */
-const PUBLIC_SITE="https://subspacereclamation.netlify.app/";
+const PUBLIC_SITE="https://premier-playbook.netlify.app/";
 let PPI={rows:[],at:0},ppLocal=[],ppQ=Promise.resolve();
 function ppIdent(){let k=null;try{k=JSON.parse(localStorage.getItem("pp-id")||"null")}catch(e){}
   if(!k||!k.seed){const hx=n=>{const a=new Uint8Array(n);crypto.getRandomValues(a);return [...a].map(v=>v.toString(16).padStart(2,"0")).join("")};k={id:"u"+hx(6),seed:hx(16),n:0};try{localStorage.setItem("pp-id",JSON.stringify(k))}catch(e){}}return k}
@@ -5649,7 +5649,7 @@ setBox.addEventListener("change",e=>{const t=e.target;
 custBar.addEventListener("click",e=>{if(e.target.closest("[data-custdone]")){document.body.classList.remove("customize");custBar.hidden=true;show(curView,true)}});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!setBox.hidden)closeSet()});
 /* ===== round 3: deep links, what's new, phone bar, install, archive, playoffs, player vs player ===== */
-const SHARE_BASE="https://subspacereclamation.netlify.app/";
+const SHARE_BASE="https://premier-playbook.netlify.app/";
 NAVG.find(g=>g[0]==="league")[2].push("playoffs");
 NAVG.find(g=>g[0]==="teams")[2].push("pvp");
 NAVG.find(g=>g[0]==="rec")[2].splice(1,0,"archive");
