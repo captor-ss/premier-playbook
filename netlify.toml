@@ -1,0 +1,7 @@
+# Netlify deploys the site from the site/ folder of this repo.
+# The prac job commits every few minutes; the ignore rule skips a deploy unless site/ changed,
+# so those commits don't use up build minutes.
+[build]
+  publish = "site"
+  command = ""
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- site/ netlify.toml"
