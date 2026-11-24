@@ -29,7 +29,7 @@ The exact site files are in `site/`. Two ways:
 2. **Automatic** (recommended): Netlify → Site configuration → Build & deploy → *Link repository* →
    choose `captor-ss/premier-playbook`, build command empty, publish directory `site`. After that,
    any change to `site/` in GitHub goes live by itself.
-After changing `site/index.html`, bump the cache name in `site/sw.js` (`pp-v128` → `pp-v129`) so phones
+After changing `site/index.html`, bump the cache name in `site/sw.js` (`pp-v129` → `pp-v130`) so phones
 pick up the new version.
 
 ## Season Two
