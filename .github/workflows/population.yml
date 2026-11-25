@@ -14,7 +14,7 @@ on:
         default: "64"
   push:
     branches: [main]
-    paths: [".github/workflows/population.yml", "scripts/prac_sync.js", "scripts/export_build.js"]
+    paths: [".github/workflows/population.yml", "scripts/prac_sync.js", "scripts/export_build.js", "scripts/highlights.js"]
 concurrency:
   group: zone-prac
   cancel-in-progress: false
@@ -34,6 +34,7 @@ jobs:
       - name: Update every 5 minutes
         env:
           TICKS: ${{ github.event.inputs.ticks || '64' }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         run: |
           git config user.name "Claude"
           git config user.email "noreply@anthropic.com"
@@ -41,6 +42,8 @@ jobs:
             start=$(date +%s)
             SAMPLES=1 GAP=0 timeout 60 python3 scripts/pop_sample.py || true
             timeout 180 node scripts/prac_sync.js || true
+            # Discord highlights: new streaks, flawless pracs, new tiers and ladder changes (state in highlights_state.json)
+            timeout 60 node scripts/highlights.js || true
             msg=""
             if ! git diff --quiet -- prac.json 2>/dev/null || [ -n "$(git status --porcelain prac.json)" ]; then msg="Prac update"; fi
             # Premier Manager export (data.json: export + boxCols): rebuilt when pracs changed, on the first round and once an hour
@@ -48,9 +51,10 @@ jobs:
               timeout 240 node scripts/export_build.js || true
               if [ -z "$msg" ] && [ -n "$(git status --porcelain data.json)" ]; then msg="Export update"; fi
             fi
+            if [ -z "$msg" ] && [ -n "$(git status --porcelain highlights_state.json)" ]; then msg="Highlights state"; fi
             if [ -z "$msg" ] && [ $((c % 3)) -eq 0 ]; then msg="Population samples"; fi
             if [ -n "$msg" ]; then
-              git add pop prac.json data.json 2>/dev/null || git add pop
+              git add pop prac.json data.json highlights_state.json 2>/dev/null || git add pop
               if ! git diff --cached --quiet; then
                 git commit -q -m "$msg"
                 for i in 1 2 3 4 5; do
