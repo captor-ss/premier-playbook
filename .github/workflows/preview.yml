@@ -1,0 +1,33 @@
+name: Prac preview
+# Watches the #discobot channel and posts a preview of each prac that starts (scripts/preview.js).
+# One run watches for about 5.5 hours; the next scheduled run queues behind it, so the watch is close
+# to continuous. Needs three repository secrets: DISCORD_BOT_TOKEN, DISCOBOT_CHANNEL_ID, PREVIEW_WEBHOOK.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/preview.yml", "scripts/preview.js"]
+concurrency:
+  group: prac-preview
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Watch for match starts
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCOBOT_CHANNEL_ID: ${{ secrets.DISCOBOT_CHANNEL_ID }}
+          PREVIEW_WEBHOOK: ${{ secrets.PREVIEW_WEBHOOK }}
+        run: node scripts/preview.js --loop 335
